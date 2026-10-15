@@ -19,6 +19,7 @@ jobs:
           script: |
             cd ~/Lost-and-Found-Portal
             git pull origin main
+            cd backend
             /usr/bin/mvn clean package -DskipTests
 
             echo "Restarting app..."
